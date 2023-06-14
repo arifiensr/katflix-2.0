@@ -6,9 +6,9 @@ type CategoryType = {
 };
 
 type MovieType = {
-  upcoming: "upcoming";
-  popular: "popular";
-  top_rated: "top_rated";
+  upcoming?: "upcoming";
+  popular?: "popular";
+  top_rated?: "top_rated";
 };
 
 type TvType = {
@@ -18,7 +18,7 @@ type TvType = {
 };
 
 const tmdbApi = {
-  getMoviesList: (type: MovieType, params: object) => {
+  getMoviesList: (type: string, params?) => {
     const url: string = "movie/" + type;
     return axiosClient.get(url, params);
   },

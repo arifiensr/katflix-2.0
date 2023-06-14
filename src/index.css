@@ -13,3 +13,9 @@ body,
   font-family: "DM Sans", sans-serif;
   @apply text-amber-800;
 }
+
+@layer components {
+  .flexbetween {
+    @apply flex items-center justify-between;
+  }
+}

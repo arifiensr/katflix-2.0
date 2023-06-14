@@ -1,9 +1,11 @@
-import Navbar from "./scenes/navbar";
+import Header from "./components/header";
+import Hero from "./components/hero";
 
 function App() {
   return (
-    <div className="bg-orange-100 app">
-      <Navbar />
+    <div className="app bg-orange-100">
+      <Header />
+      <Hero />
     </div>
   );
 }
